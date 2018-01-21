@@ -58,7 +58,21 @@ document.addEventListener('DOMContentLoaded', () => {
 	for (let i = 0; i < operationButtons.length; i++) {
 		operationButtons[i].addEventListener('click', () => {
 			let operation = operationButtons[i].dataset.value;
+			switch (operation) {
+				case '+':
+				break;
+				case '-':
+				break;
+				case 'x':
+				break;
+				case '/':
+				break;
+				case '=':
+				break;
+			}
+
 			calc.innerText = actualValue + ' ' + operation;
+
 		})
 	}
 
